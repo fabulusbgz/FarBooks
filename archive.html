@@ -3,49 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="height=device-height,width=700,user-scalable=yes">
   <title>FasBooks</title>
   <link rel="stylesheet" href="scss/style.css">
-  <script type="text/javascript">
-    (function(){
-      if (typeof(window.orientation) !== 'undefined')
-      {
-        function getDeviceWidth()
-        {
-          var deviceWidth = window.orientation == 0 ? window.screen.width : window.screen.height;
-          if (navigator.userAgent.indexOf('Android') >= 0 && window.devicePixelRatio)
-            deviceWidth = deviceWidth / window.devicePixelRatio;
-
-          return deviceWidth;
-        }
-
-        var deviceWidth = getDeviceWidth();
-        var maxWidth = 900;
-        
-        if (deviceWidth < maxWidth)
-        {
-          if (window.orientation == 0 || window.orientation == 180)
-            document.write('<meta name="viewport" content="width=device-width">');
-          else
-            document.write('<meta name="viewport" content="width=device-height">');
-        }
-        else
-          document.write('<meta name="viewport" content="width=' + maxWidth + '">');
-      }
-    })();
-  </script>
-  
-  <style type="text/css">
-    * { margin: 0; padding: 0; }
-    .content { min-width: 320px; max-width: 900px; background: #ffff99; }
-    .content div { border: 1px solid #f00; }
-  </style>
 </head>
 
 <body>
-  <header>
+<div class="adaptive">
+  <header class="navbar">
     <div id="menu">
-      <navbar class="navbar">
         <h3>FarBooks</h3>
         <ul class="menu-list">
           <li class="menu-item active">
@@ -55,7 +21,6 @@
             <a href="techinfo.html">Поддержка</a>
           </li>
         </ul>
-      </navbar>
   </header>
 <div class="sidehov">
   <div class="sidenav">
@@ -94,17 +59,15 @@
     </button>
   </div>
 </div>
-
-  <div class="container">
+  <div class="-ad">
     <div id="pdf">
     </div>
   </div>
 
-  <footer>
-    <div>
+  <footer class="footer-text">
       &copy; Труфанов Дмитрий, Сазонов Данила
-    </div>
   </footer>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
