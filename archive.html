@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="height=device-height,width=700,user-scalable=yes">
+  <title>FasBooks</title>
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+  <input type="checkbox" id="nav-toggle" hidden>
+  <nav class="nav">
+    <label style="top: 50px;" for="nav-toggle" class="nav-toggle" onclick=""></label>
+<div class="sidenav">
+  <button class="button-1">Рабочая программа
+  </button>
+  <button class="dropdown-btn">Самостоятельные работы
+  </button>
+  <div class="dropdown-container">
+    <button class="button-1" id="addButton12">Самостоятельная работа 1</button>
+    <button class="button-1" id="addButton13">Самостоятельная работа 2</button>
+    <button class="button-1" id="addButton14">Самостоятельная работа 3</button>
+    <button class="button-1" id="addButton15">Самостоятельная работа 4</button>
+    <button class="button-1" id="addButton16">Самостоятельная работа 5</button>
+    <button class="button-1" id="addButton17">Самостоятельная работа 6</button>
+    <button class="button-1" id="addButton18">Самостоятельная работа 7</button>
+  </div>
+  <button class="dropdown-btn">Практические работы
+  </button>
+  <div class="dropdown-container">
+    <button class="button-1" id="addButton">Практическая 1</button>
+    <button class="button-1" id="addButton1">Практическая 2</button>
+    <button class="button-1" id="addButton2">Практическая 3</button>
+    <button class="button-1" id="addButton3">Практическая 4</button>
+    <button class="button-1" id="addButton4">Практическая 5</button>
+    <button class="button-1" id="addButton5">Практическая 6</button>
+    <button class="button-1" id="addButton6">Практическая 7</button>
+    <button class="button-1" id="addButton7">Практическая 8</button>
+    <button class="button-1" id="addButton8">Практическая 9</button>
+    <button class="button-1" id="addButton9">Практическая 10</button>
+    <button class="button-1" id="addButton10">Практическая 11</button>
+    <button class="button-1" id="addButton11">Практическая 12</button>
+  </div>
+  <button class="button-1" id="addButton20">Тест
+  </button>
+  <button class="button-1" id="addButton19">Курсовая работа
+  </button>
+</div>
+</nav>
+  <div class="adaptive">
+  <header class="navbar">
+    <div id="menu">
+        <h3>FarBooks</h3>
+        <ul class="menu-list">
+          <li class="menu-item active">
+            <a href="archive.html">Файлы</a>
+          </li>
+          <li class="menu-item">
+            <a href="techinfo.html">Поддержка</a>
+          </li>
+        </ul>
+  </header>
+  <div class="-ad">
+    <div id="pdf">
+    </div>
+</div>
+  <footer class="footer-text">
+      &copy; Труфанов Дмитрий, Сазонов Данила
+  </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton1');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate1').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton2');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate2').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton3');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate3').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton4');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate4').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton5');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate5').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton6');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate6').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton7');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate7').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton8');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate8').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton9');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate9').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton10');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate10').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton11');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate11').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton12');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate12').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton13');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate13').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton14');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate14').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton15');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate15').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton16');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate16').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton17');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate17').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton18');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate18').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton19');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate19').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton20');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate20').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let html = [
+        {},
+      ];
+
+      let addButton = document.getElementById('addButton21');
+      let pdf = document.getElementById('pdf');
+
+      addButton.addEventListener('click', function () {
+        let template = document.getElementById('pdfplate21').innerHTML;
+        let rendered = Mustache.render(template, { html: html });
+        pdf.innerHTML = rendered;
+      });
+    });
+  </script>
+
+
+
+  <script id="pdfplate" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1zl54z1ZdSzrE9ShwTsggfNxjjiuLTmwq/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 1" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate1" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/14CY20BlIuVTBfHGtYjj5c4v4spoQlJv0/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 2" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate2" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1f7_C8MsdspwTKzz3JJgJCRP_H4PXaYSv/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 3" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate3" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/171-6Zj3pE05m_kc3rPCUHRgSckJOzAvE/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 4" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate4" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1rDEAuXgPdLTqtxg12H4ElDjMJV-_K4uR/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 5" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate5" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1ng2VvFi-lzOdTCmsZGDsC--ksImKmWDC/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 6" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate6" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1QHZ3wy4qJhoq9FkGH4POeHlVSgkMh0Gm/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 7" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate7" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1hvoqSJTYoTmjgKyuxoUztbNLzKMbP3z3/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 8" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate8" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1xSRWAeDXXVX188wctsjHIHG6OGxsxZs7/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 9" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate9" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1wv5U_NMOa3UtsfW-PnGfS5JOEXfMgFbr/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 10" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate10" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/19g4GAqwunvP8oR0HcGB8XBxYhisPDJQ5/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 11" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate11" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/18Ly7ngadwB_SdvcskBsp-ikKAlNQzDBc/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="прак 12" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate12" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1yhvf7fMi2-N-AmoelfVv_sk1KYZfDGhL" name="сам 1" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate13" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1LgNDrCtbiwL1HfJqiyNbw1GWiFx0s_e5" name="сам 2" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate14" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1L7HOkrbDBG-aAtJs3COASRaQH6n7lMvI/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="сам 3" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate15" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1D-HmeuANUU2aBo-_TsadroXAyqpUI5OZ/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="сам 4" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate16" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1U2QbMmcVmRJnwHn2Zvvk2aWhd4GF_eYq/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="сам 5" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate17" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1d2mNipcV6nL3T99mPzj4PIa1TDxsp8dN/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="сам 6" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate18" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1WhoWv7ohq8ruunJ6qvbgJ8JhnX920wSB/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="сам 7" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate19" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1FaN17oN7s5BwXnd7UFZakMHSCRljEkyj/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="курс 1" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate20" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://docs.google.com/document/d/1TOv243k1BezMzbC1ah-PtEwXVt6LerGg/edit#heading=h.gjdgxs" name="тест" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate21" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="data/практические/практическая 1.pdf" name="сам 1" />
+    </div>
+    {{/html}}
+  </script>
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
