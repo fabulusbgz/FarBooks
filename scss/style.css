@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../scss/welcome.css";
 body, html {
   padding: 0px;
   margin: 0px;
@@ -9,8 +10,93 @@ body, html {
   overflow: hidden;
 }
 
+.main-text h3 {
+  line-height: 0.7em;
+  font-size: 1.3em;
+  color: #111;
+  font-weight: inherit;
+  text-align: left;
+  padding-left: 3%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.main-text h2 {
+  line-height: 0.8em;
+  font-size: 1.7em;
+  color: #111;
+  font-weight: inherit;
+  text-align: left;
+  padding-left: 3%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.main-text h1 {
+  line-height: 0.9em;
+  font-size: 2em;
+  color: #111;
+  font-weight: inherit;
+  text-align: left;
+  padding-left: 3%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.main-text a {
+  line-height: 0.6em;
+  font-size: 1.3em;
+}
+
 h3 {
   font-size: 1.3em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
+  color: aliceblue;
+  text-align: left;
+  padding-left: 3%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
+  color: aliceblue;
+  text-align: left;
+  padding-left: 3%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+h1 {
+  font-size: 2em;
+  margin-block-start: 0.2em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
+  color: aliceblue;
+  text-align: left;
+  padding-left: 3%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.LOGO {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 2.5em;
   margin-block-start: 0.2em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -51,7 +137,7 @@ footer {
   width: 100%;
   top: 0;
   right: 0;
-  height: 30px;
+  height: 70px;
   align-items: center;
   z-index: 20;
 }
@@ -64,6 +150,12 @@ footer {
 
 .menu-list {
   list-style-type: none;
+  align-content: center;
+}
+
+.menu-list > ul {
+  list-style-type: none;
+  align-content: center;
 }
 
 .menu-item:not(:last-child) {
@@ -97,6 +189,7 @@ footer {
 }
 
 #menu {
+  align-content: center;
   position: relative;
 }
 
@@ -140,7 +233,7 @@ footer {
   top: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 50px;
+  padding-top: 200px;
   z-index: 15;
 }
 
@@ -182,7 +275,7 @@ iframe {
 }
 
 .-ad {
-  padding-top: 14px;
+  padding-top: 70px;
 }
 
 .button-1 {
@@ -274,6 +367,59 @@ iframe {
     height: 100%;
     position: absolute;
     width: 100%;
+  }
+  .LOGO {
+    padding-left: 10%;
+    font-size: 1.3em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: inherit;
+    color: aliceblue;
+    text-align: left;
+    padding-left: 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .main-text h3 {
+    line-height: 0.7em;
+    font-size: 0.7em;
+    color: #111;
+    font-weight: inherit;
+    text-align: left;
+    padding-left: 3%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .main-text h2 {
+    line-height: 0.8em;
+    font-size: 0.8em;
+    color: #111;
+    font-weight: inherit;
+    text-align: left;
+    padding-left: 3%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .main-text h1 {
+    line-height: 0.9em;
+    font-size: 0.9em;
+    color: #111;
+    font-weight: inherit;
+    text-align: left;
+    padding-left: 3%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  .main-text a {
+    line-height: 0.6em;
+    font-size: 0.6em;
   }
 }
 .nav {
@@ -372,4 +518,28 @@ body {
 }
 .doc .doc-content {
   font-size: 1px;
+}
+
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  margin-left: 550px;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-indent: -999px;
+  z-index: 20;
+  background: url(../images/totop.png) no-repeat left top;
+  transition: 0s ease;
+  -o-transition: 0s ease;
+  -webkit-transition: 0s ease;
+}
+
+#toTop:hover {
+  outline: none;
+  background-position: 0 bottom;
 }/*# sourceMappingURL=style.css.map */

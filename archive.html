@@ -4,16 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="height=device-height,width=device-width,user-scalable=yes, initial-scale=1.0">
-  <title>FasBooks</title>
+  <title>FasBooks-Archive</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
   <input type="checkbox" id="nav-toggle" hidden>
   <nav class="nav">
-    <label style="top: 50px;" for="nav-toggle" class="nav-toggle" onclick=""></label>
+    <label style="top: 90px;" for="nav-toggle" class="nav-toggle" onclick=""></label>
 <div class="sidenav">
-  <button class="button-1">Рабочая программа
+  <button class="button-1">Лекции
   </button>
   <button class="dropdown-btn">Самостоятельные работы
   </button>
@@ -42,16 +44,27 @@
     <button class="button-1" id="addButton10">Практическая 11</button>
     <button class="button-1" id="addButton11">Практическая 12</button>
   </div>
-  <button class="button-1" id="addButton20">Тест
+  <button class="dropdown-btn">Тесты
   </button>
+  <div class="dropdown-container">
+    <button class="button-1" id="addButton20">Тест 1</button>
+    <button class="button-1" id="addButton21">Тест 2</button>
+    <button class="button-1" id="addButton22">Тест 3</button>
+    <button class="button-1" id="addButton23">Тест 4</button>
+    <button class="button-1" id="addButton24">Тест 5</button>
+    <button class="button-1" id="addButton25">Тест 6</button>
+    <button class="button-1" id="addButton26">Тест 7</button>
+    <button class="button-1" id="addButton27">Тест 8</button>
+  </div>
   <button class="button-1" id="addButton19">Курсовая работа
   </button>
 </div>
 </nav>
-  <div class="adaptive">
+<div class="header">
   <header class="navbar">
     <div id="menu">
-        <h3>FarBooks</h3>
+        <a  href="index.html"><h2 class="LOGO" style="margin-left: 65px; margin-top: 20px;">FarBooks</h2></a>
+        <a href="https://www.chgtk.ru/?ysclid=lwg4prljyy195306157"><img src="img/Logo-gerb.svg" style="height: 60px; width: 60px; margin: 5px;"></a>
         <ul class="menu-list">
           <li class="menu-item active">
             <a href="archive.html">Файлы</a>
@@ -59,14 +72,17 @@
           <li class="menu-item">
             <a href="techinfo.html">Поддержка</a>
           </li>
+          <a href="https://admcher.ru/?ysclid=lwg4wesnu9302670281"><img src="img/Gorod-gerb.svg" style="height: 60px; width: 60px; margin: 5px;"></a>
         </ul>
-  </header>
+    </div>
+  </header> 
+</div>
   <div class="-ad">
     <div id="pdf">
     </div>
-</div>
+  </div>
   <footer class="footer-text">
-      &copy; Труфанов Дмитрий, Сазонов Данила
+      &copy; Сайт разработан при поддерже | Труфанов Дмитрий, Сазонов Данила
   </footer>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
@@ -423,8 +439,102 @@
       });
     });
   </script>
-
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let html = [
+          {},
+        ];
+  
+        let addButton = document.getElementById('addButton22');
+        let pdf = document.getElementById('pdf');
+  
+        addButton.addEventListener('click', function () {
+          let template = document.getElementById('pdfplate22').innerHTML;
+          let rendered = Mustache.render(template, { html: html });
+          pdf.innerHTML = rendered;
+        });
+      });
+    </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          let html = [
+            {},
+          ];
+    
+          let addButton = document.getElementById('addButton23');
+          let pdf = document.getElementById('pdf');
+    
+          addButton.addEventListener('click', function () {
+            let template = document.getElementById('pdfplate23').innerHTML;
+            let rendered = Mustache.render(template, { html: html });
+            pdf.innerHTML = rendered;
+          });
+        });
+      </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            let html = [
+              {},
+            ];
+      
+            let addButton = document.getElementById('addButton24');
+            let pdf = document.getElementById('pdf');
+      
+            addButton.addEventListener('click', function () {
+              let template = document.getElementById('pdfplate24').innerHTML;
+              let rendered = Mustache.render(template, { html: html });
+              pdf.innerHTML = rendered;
+            });
+          });
+        </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              let html = [
+                {},
+              ];
+        
+              let addButton = document.getElementById('addButton25');
+              let pdf = document.getElementById('pdf');
+        
+              addButton.addEventListener('click', function () {
+                let template = document.getElementById('pdfplate25').innerHTML;
+                let rendered = Mustache.render(template, { html: html });
+                pdf.innerHTML = rendered;
+              });
+            });
+          </script>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                let html = [
+                  {},
+                ];
+          
+                let addButton = document.getElementById('addButton26');
+                let pdf = document.getElementById('pdf');
+          
+                addButton.addEventListener('click', function () {
+                  let template = document.getElementById('pdfplate26').innerHTML;
+                  let rendered = Mustache.render(template, { html: html });
+                  pdf.innerHTML = rendered;
+                });
+              });
+            </script>
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  let html = [
+                    {},
+                  ];
+            
+                  let addButton = document.getElementById('addButton27');
+                  let pdf = document.getElementById('pdf');
+            
+                  addButton.addEventListener('click', function () {
+                    let template = document.getElementById('pdfplate27').innerHTML;
+                    let rendered = Mustache.render(template, { html: html });
+                    pdf.innerHTML = rendered;
+                  });
+                });
+              </script>
 
   <script id="pdfplate" type="x-tmpl-mustache">
     {{#html}}
@@ -569,14 +679,56 @@
   <script id="pdfplate20" type="x-tmpl-mustache">
     {{#html}}
     <div class="html">
-      <iframe class="pdf" id="frame" src="https://docs.google.com/document/d/1TOv243k1BezMzbC1ah-PtEwXVt6LerGg/edit?usp=sharing&ouid=102205227496974015432&rtpof=true&sd=true" name="тест" />
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UQzdWTzRRRjBTQVVMUldZVTJKVFFUVzhUVy4u" name="тест 1" />
     </div>
     {{/html}}
   </script>
   <script id="pdfplate21" type="x-tmpl-mustache">
     {{#html}}
     <div class="html">
-      <iframe class="pdf" src="data/практические/практическая 1.pdf" name="сам 1" />
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UOFlKRUtPWUhJMldOSVk2UjNLTzdPSVYyUC4u" name="тест 2" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate22" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UQlhQOUpMSUk3SjJJSkdFT1oxVUdKQVpERi4u" name="тест 3" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate23" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UODQ4RkFHTUcwTTJTRzlPS1EyRFdPT1RaNy4u" name="тест 4" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate24" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UMlpCUlo3WVNSV0JUSlg3R0c3SDVFMlI3Ti4u" name="тест 5" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate25" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UOUdQMTlRR0xYVzI1MDJYSVBTOFdXTUtWNy4u" name="тест 6" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate26" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UOUdQMTlRR0xYVzI1MDJYSVBTOFdXTUtWNy4u" name="тест 7" />
+    </div>
+    {{/html}}
+  </script>
+  <script id="pdfplate27" type="x-tmpl-mustache">
+    {{#html}}
+    <div class="html">
+      <iframe class="pdf" src="https://forms.office.com/Pages/ResponsePage.aspx?id=JfZhbOHe9kyuRcq1PTEi0e4kPJg-9eRJot32mRMnAY5UOVpQNElQVFFRV0VNTlc3M1NJWjdTRlJUTC4u" name="тест 8" />
     </div>
     {{/html}}
   </script>
@@ -598,5 +750,4 @@
     }
   </script>
 </body>
-
 </html>
