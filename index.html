@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="height=device-height,width=device-width,user-scalable=yes, initial-scale=1.0">
-  <title>Welcome</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="scss/style.css">
-  <link rel="stylesheet" href="scss/welcome.css">
+  <link rel="stylesheet" media="screen" href="scss/style.css">
+  <link rel="stylesheet" media="screen" href="scss/welcome.css">
 </head>
 
   <body>
-    <div class="we-block">
-      <h1>Добро пожаловать на наш сайт!</h1>
+    <form class="we-block blur" action="archive.html" method="POST">
+    <div>
+      <h1 class="light">Добро пожаловать на наш сайт!</h1><br>
+      <h2 class="light">Здесь вы сможете найти учебное пособие по проектированию пользовательского интерфейса для web-сайтов</h2><br>
+      <h3 class="light">Во время посещения сайта могут собираться персональные данные</h3><br>
+      <label for="checkbox">
+        <a class="light">Подтверждаю, что я ознакомлен и согласен с сбором данных.</a>
+    </label>
+    <input checked="checked" class="input" id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submited').disabled = !this.checked;" />
+      <button action id="submited" class="btn-c" type="submit">Кнопка</button>
+    </form>
     </div>
+
   </body>
+
 </html>
