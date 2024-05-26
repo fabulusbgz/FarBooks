@@ -13,14 +13,18 @@
   <body>
     <form class="we-block blur" action="archive.html">
     <div>
+      <h1 class="light">МДК 08.01 Проектирование и разработка интерфейсов пользователя</h1><br>
       <h1 class="light">Добро пожаловать на наш сайт!</h1><br>
       <h2 class="light">Здесь вы сможете найти учебное пособие по проектированию пользовательского интерфейса для web-сайтов</h2><br>
       <h3 class="light">Во время посещения сайта могут собираться персональные данные</h3><br>
+      <a href="policy.html" class="dark" id="poly">Даю согласие на обработку своих персональных данных.</a>
       <label for="checkbox">
-        <a class="light">Подтверждаю, что я ознакомлен и согласен с сбором данных.</a>
-    </label>
-    <input checked="checked" class="input" id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submited').disabled = !this.checked;" />
-      <button action id="submited" class="btn-c" type="submit">Кнопка</button>
+        </label>
+        <input type="checkbox" id="_checkbox" name="checkbox" onchange="document.getElementById('submited').disabled = !this.checked;">
+        <label for="_checkbox">
+      </label>
+      <div class="clear"></div>
+      <button action id="submited" class="btn-c" type="submit" disabled>Подтвердить</button>
     </form>
     </div>
 

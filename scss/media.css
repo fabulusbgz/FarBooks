@@ -1,0 +1,149 @@
+:root {
+  --bg: deepskyblue;
+  --color: white;
+
+  --desktop: 1000px;
+  --notebook: 992px;
+  --tablet: 768px;
+  --mobile: 480px;
+  --mobile_small: 320px;
+
+  ---desktop: 1000px;
+  ---notebook: 992px;
+  ---tablet: 768px;
+  ---mobile: 480px;
+  ---mobile_small: 90%;
+
+  --contentWidth: var(--desktop);
+  --contentHeight: var(---desktop);
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --contentWidth: var(--notebook);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    :root {
+        --contentWidth: var(--tablet);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --contentWidth: var(--mobile);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --contentWidth: var(--mobile_small);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    .LOGO {
+        padding-left: 10%;
+        font-size: 1.3em;
+        margin-block-start: 0.2em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: inherit;
+        color: aliceblue;
+        text-align: left;
+        padding-left: 3%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    .main-text {
+        h3 {
+            line-height: 0.4em;
+            font-size: 0.7em;
+            color: #111;
+            font-weight: inherit;
+            text-align: left;
+            padding-left: 3%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        h2 {
+            line-height: 0.5em;
+            font-size: 0.8em;
+            color: #111;
+            font-weight: inherit;
+            text-align: left;
+            padding-left: 3%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        h1 {
+            line-height: 0.7em;
+            font-size: 0.9em;
+            color: #111;
+            font-weight: inherit;
+            text-align: left;
+            padding-left: 3%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        a {
+            line-height: 0.5em;
+            font-size: 0.6em;
+        }
+    }
+}
+
+@-webkit-keyframes bugfix {
+    to {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html,
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html,
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .nav {
+        width: 100%;
+        box-shadow: none;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}

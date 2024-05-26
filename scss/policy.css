@@ -1,0 +1,40 @@
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: visible;
+}
+
+.tex {
+    font-size: medium;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 5vw auto;
+}
+
+@media screen and (min-width: 320px) {
+    .tex {
+        padding-top: 50px;
+        font-size: medium;
+        display: block;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 1vw auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tex {
+        font-size: medium;
+        display: block;
+        padding-top: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 1vw auto;
+    }
+}
