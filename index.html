@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="height=device-height,width=device-width,user-scalable=yes, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" media="screen" href="scss/style.css">
+  <link rel="stylesheet" media="screen" href="scss/welcome.css">
+</head>
+
+  <body>
+    <form class="we-block blur" action="archive.html">
+    <div>
+      <h1 class="light">МДК 08.01 Проектирование и разработка интерфейсов пользователя</h1><br>
+      <h1 class="light">Добро пожаловать на наш сайт!</h1><br>
+      <h2 class="light">Здесь вы сможете найти учебное пособие по проектированию пользовательского интерфейса для web-сайтов</h2><br>
+      <h3 class="light">Во время посещения сайта могут собираться персональные данные</h3><br>
+      <a href="policy.html" class="dark" id="poly">Даю согласие на обработку своих персональных данных.</a>
+      <label for="checkbox">
+        </label>
+        <input type="checkbox" id="_checkbox" name="checkbox" onchange="document.getElementById('submited').disabled = !this.checked;">
+        <label for="_checkbox">
+      </label>
+      <div class="clear"></div>
+      <button action id="submited" class="btn-c" type="submit" disabled>Подтвердить</button>
+    </form>
+    </div>
+
+  </body>
+
+</html>

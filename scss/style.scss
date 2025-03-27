@@ -1,0 +1,687 @@
+@import "../scss/media.css";
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.bga {
+    background-image: url("../img/bg.jpeg");
+}
+
+.main-text {
+    h3 {
+        line-height: 0.2em;
+        font-size: 0.2em;
+        color: #111;
+        text-align: left;
+        padding-left: 3%;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    h2 {
+        line-height: 1em;
+        font-size: 0.4em;
+        color: #111;
+        text-align: left;
+        padding-left: 3%;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    h1 {
+        line-height: 1.2em;
+        font-size: 0.6em;
+        color: #111;
+        text-align: left;
+        padding-left: 3%;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+    a {
+        line-height: 0.6em;
+        font-size: 1em;
+    }
+}
+
+.py-tex {
+    font-weight: 500px;
+    font-size: 53px;
+    line-height: 62px;
+}
+
+.py-tex {
+    a {
+        font-weight: 500px;
+        font-size: 53px;
+        line-height: 62px;
+    }
+}
+
+.pol {
+    color: #818181;
+}
+
+.pol:hover {
+    color: #ffffff;
+}
+
+.back {
+    background-image: url("../img/bg.jpeg");
+}
+
+.LOGO {
+    margin-left: 65px;
+    margin-top: 20px;
+    font-size: 2.5em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: inherit;
+    color: aliceblue;
+    text-align: left;
+    padding-left: 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+footer {
+    position: fixed;
+    background-color: #111;
+    width: 100%;
+    color: #f4f4f4;
+    font-size: 16px;
+    bottom: 0;
+    z-index: 4000;
+}
+
+.footer-text {
+    padding-left: 1%;
+}
+
+.container {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.navbar {
+    display: inline;
+    border: solid #111;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 70px;
+    align-items: center;
+    z-index: 20;
+}
+
+.header {
+    padding-top: 10px;
+    size: 10px;
+    position: relative;
+}
+
+.menu-list {
+    list-style-type: none;
+    align-content: center;
+}
+
+.menu-list > ul {
+    list-style-type: none;
+    align-content: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-text {
+    font-weight: 500px;
+    font-size: 53px;
+    line-height: 62px;
+}
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #1e88e5;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 25px;
+    transition: all 0.8s ease 0s;
+}
+.link:hover {
+    background-color: #19dd33;
+}
+
+#menu {
+    align-content: center;
+    position: relative;
+}
+
+#menu ul {
+    float: right;
+    margin: 0px;
+}
+
+#menu ul li {
+    text-align: center;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    display: inline;
+    float: left;
+    list-style-type: none;
+}
+
+#menu ul li a {
+    min-width: 80px;
+    max-width: 15vw;
+    transition: ease all 0.3s;
+    text-decoration: none;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    display: block;
+}
+
+#menu ul li a:hover {
+    background: #00ff2a;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.wrap {
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    min-width: 300px;
+    position: fixed;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 200px;
+    z-index: 15;
+}
+
+.sidenav a,
+.dropdown-btn,
+.button-1,
+.button-2 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover,
+.button-1:hover,
+.button-2:hover {
+    color: #ffffff;
+}
+
+.active {
+    background-color: rgb(27, 180, 60);
+    color: white;
+    font-weight: bold;
+}
+
+.hide {
+    width: 1px;
+    visibility: hidden;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #111;
+    padding-left: 8px;
+}
+
+iframe {
+    height: 100%;
+    position: fixed;
+    width: 1900px;
+    overflow: hidden;
+}
+
+.-ad {
+    padding-top: 60px;
+}
+
+.button-1 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-2 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav {
+    width: 320px;
+    min-width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: -320px;
+    padding: 15px 20px;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+    background: #111;
+    z-index: 2000;
+}
+
+.nav-toggle {
+    position: absolute;
+    left: 320px;
+    top: 1em;
+    padding: 0.5em;
+    background: inherit;
+    color: #dadada;
+    cursor: pointer;
+    font-size: 2.1em;
+    line-height: 1;
+    z-index: 2001;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
+}
+
+.nav-toggle:after {
+    content: "\2630";
+    text-decoration: none;
+}
+
+.nav-toggle:hover {
+    color: #f4f4f4;
+}
+
+[id="nav-toggle"] {
+    position: absolute;
+    display: none;
+}
+
+[id="nav-toggle"]:checked ~ .nav > .nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em;
+}
+
+[id="nav-toggle"]:checked ~ .nav {
+    left: 0;
+    box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+[id="nav-toggle"]:checked ~ main > article {
+    -webkit-transform: translateX(320px);
+    -moz-transform: translateX(320px);
+    transform: translateX(320px);
+}
+
+[id="nav-toggle"]:checked ~ .nav > .nav-toggle:after {
+    content: "\2715";
+}
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+.doc .doc-content {
+    font-size: 1px;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: 550px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: -999px;
+    z-index: 20;
+    background: url(../images/totop.png) no-repeat left top;
+    transition: 0s ease;
+    -o-transition: 0s ease;
+    -webkit-transition: 0s ease;
+}
+#toTop:hover {
+    outline: none;
+    background-position: 0 bottom;
+}
+
+.forma {
+    padding-top: 10vw;
+    min-height: 900px;
+    width: 300px;
+    justify-self: center;
+    display: block;
+    margin: 2vw auto;
+    background: white;
+}
+
+.forma h2 {
+    border: 0;
+    width: 300px;
+    padding: 10px;
+    border-bottom: 2px solid #393939;
+    background: none;
+    font-family: "Fontawesome", "Source Sans Pro", sans-serif;
+    display: block;
+    color: #393939;
+}
+
+form {
+    min-height: 900px auto;
+    margin: 2vw auto;
+    width: 300px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.btn-n h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #393939;
+    font-size: 22px;
+    width: 200px;
+    text-align: center;
+    margin: 30px 100px;
+}
+ul {
+    display: inline-block;
+}
+
+input {
+    border: 0;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #393939;
+    background: none;
+    font-family: "Fontawesome", "Source Sans Pro", sans-serif;
+    display: block;
+    color: #393939;
+}
+textarea {
+    border: 0;
+    width: 300px;
+    height: 100px;
+    display: block;
+    background: none;
+    padding: 10px;
+    font-family: "Fontawesome", "Source Sans Pro", sans-serif;
+    border: 2px solid #393939;
+    color: #393939;
+}
+#submit {
+    margin: 3em auto 4em;
+    border: 2px solid #393939;
+    color: #393939;
+}
+#submit:hover {
+    color: #fff;
+}
+.btn-n {
+    background: none;
+    border: 2px solid #393939;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1vw auto;
+    padding: 1.2em 2em;
+    color: #393939;
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    display: block;
+}
+
+.btn-n:hover {
+    background: #393939;
+    color: #fff;
+    border: #393939 solid 2px;
+}
+.btn-n:active {
+    background: #393939;
+    color: #fff;
+    border: #393939 solid 2px;
+}
+
+:root {
+    --bg: deepskyblue;
+    --color: white;
+
+    --desktop: 1000px;
+    --notebook: 992px;
+    --tablet: 768px;
+    --mobile: 480px;
+    --mobile_small: 320px;
+
+    ---desktop: 1000px;
+    ---notebook: 992px;
+    ---tablet: 768px;
+    ---mobile: 480px;
+    ---mobile_small: 90%;
+
+    --contentWidth: var(--desktop);
+    --contentHeight: var(---desktop);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --contentWidth: var(--notebook);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    :root {
+        --contentWidth: var(--tablet);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --contentWidth: var(--mobile);
+    }
+    iframe {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --contentWidth: var(--mobile_small);
+    }
+    iframe {
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+    }
+    .pdf {
+        background: #ffffff;
+    }
+    footer {
+        z-index: -1;
+    }
+    .LOGO {
+        visibility: hidden;
+        font-size: 1.3em;
+        margin-block-start: 0.2em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: inherit;
+        color: aliceblue;
+        text-align: left;
+        padding-left: 3%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
+
+    .py-tex {
+        text-align: justify;
+        font-weight: 200px;
+        font-size: 26px;
+        line-height: 24px;
+    }
+
+    .main-text {
+        h3 {
+            line-height: 0.6em;
+            font-size: 0.5em;
+            color: #111;
+            font-weight: inherit;
+            text-align: left;
+            padding-left: 3%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        h2 {
+            line-height: 0.8em;
+            font-size: 0.6em;
+            color: #111;
+            font-weight: inherit;
+            text-align: left;
+            padding-left: 3%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        h1 {
+            line-height: 1em;
+            font-size: 0.7em;
+            color: #111;
+            font-weight: inherit;
+            text-align: left;
+            padding-left: 3%;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        a {
+            line-height: 0.6em;
+            font-size: 0.8em;
+        }
+    }
+    #menu ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 50px;
+        color: rgb(255, 255, 255);
+        height: 50px;
+        display: block;
+    }
+}
+
+@-webkit-keyframes bugfix {
+    to {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html,
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html,
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .nav {
+        width: 100%;
+        box-shadow: none;
+    }
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
